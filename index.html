@@ -1,1 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A landing page for the famous Mohibank" />
+    <meta name="author" content="Mohireza" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Welcome to Mohibank</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__container">
+        <p class="title"><a href="#">MOHIBANK</a></p>
+        <button class="button menu--mobile--open">≡</button>
+        <div class="menu--wide">
+          <a href="#" class="link menu--wide__button">Rates</a>
+          <a href="#" class="link menu--wide__button">Terms</a>
+          <a href="#" class="link menu--wide__button">Accounts</a>
+          <a href="#" class="link menu--wide__button">App</a>
+        </div>
+        <div class="login--wide">
+          <a
+            href="#"
+            class="button login--wide__button login--wide__button--sign-up"
+            >Sign up</a
+          >
+          <a
+            href="#"
+            class="button login--wide__button login--wide__button--sign-in"
+            >Sign in</a
+          >
+        </div>
+      </div>
+    </nav>
 
+    <div class="menu--mobile">
+      <a href="#" class="link menu--mobile__button">Rates</a>
+      <a href="#" class="link menu--mobile__button">Terms</a>
+      <a href="#" class="link menu--mobile__button">Accounts</a>
+      <a href="#" class="link menu--mobile__button">App</a>
+      <div class="menu--mobile__login">
+        <a
+          href="#"
+          class="button login--mobile__button login--mobile__button--sign-up"
+          >Sign up</a
+        >
+        <a
+          href="#"
+          class="button login--mobile__button login--mobile__button--sign-in"
+          >Sign in</a
+        >
+      </div>
+    </div>
+
+    <main>
+      <section class="head">
+        <div class="head__content">
+          <h1 class="head__title">
+            Welcome to the best banking app in the world
+          </h1>
+          <p class="head__desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde,
+            quaerat laboriosam minima officia quidem voluptatem exercitationem
+            quod aspernatur ex dolorem quasi corporis dolore eveniet non tempore
+            numquam ipsa ab veritatis.
+          </p>
+          <div class="head__links">
+            <button class="link head__link head__link--read-more">
+              Read More
+            </button>
+            <button class="link head__link head__link--start-now">
+              Open Your New Account →
+            </button>
+          </div>
+        </div>
+        <img src="img/hero.png" class="head__hero" />
+      </section>
+
+      <secion class="features">
+        <p class="section-name">features</p>
+        <h2 class="section__title">
+          Everything from the best bank in the world!
+        </h2>
+        <div class="feature">
+          <img
+            src="img/grow-lazy.jpg"
+            data-src="img/grow.jpg"
+            alt=""
+            class="feature__img"
+          />
+          <div class="feature__content">
+            <ion-icon name="wallet-outline"></ion-icon>
+            <h2 class="feature__title">Your money, your choice</h2>
+            <p class="feature__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              consequatur repellat assumenda, id fuga atque.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <img
+            src="img/digital-lazy.jpg"
+            data-src="img/digital.jpg"
+            alt=""
+            class="feature__img"
+          />
+          <div class="feature__content">
+            <ion-icon name="earth-outline"></ion-icon>
+            <h2 class="feature__title">Mr.Worldwide</h2>
+            <p class="feature__text">
+              Doloribus culpa inventore nam expedita deserunt, laboriosam at
+              neque error nesciunt voluptas autem nihil eaque.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <img
+            src="img/card-lazy.jpg"
+            data-src="img/card.jpg"
+            alt=""
+            class="feature__img"
+          />
+          <div class="feature__content">
+            <ion-icon name="card-outline"></ion-icon>
+            <h2 class="feature__title">as free as a debit card</h2>
+            <p class="feature__text">
+              Nostrum hic commodi! Aut laborum minus mollitia distinctio
+              possimus molestias dicta eum similique expedita
+            </p>
+          </div>
+        </div>
+      </secion>
+
+      <section class="operations">
+        <p class="section-name">operations</p>
+        <h2 class="section__title">Do anything and do it FAST!</h2>
+        <div class="operation-box">
+          <div class="operation-titles">
+            <button
+              class="operation-title operation-title--transfer operation-title--active"
+              data-tab="1"
+            >
+              Instant Transfer
+            </button>
+            <button class="operation-title operation-title--loan" data-tab="2">
+              Instant Loan
+            </button>
+            <button class="operation-title operation-title--close" data-tab="3">
+              Instant Close
+            </button>
+          </div>
+          <div
+            class="operation-content operation-content--1 operation-content--active"
+          >
+            <ion-icon
+              name="arrow-up-circle-outline"
+              class="operation__icon operation__icon--1"
+            ></ion-icon>
+            <h3 class="operation__name">Transfer to anyone</h3>
+            <p class="operation__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+              dolor natus esse, similique nisi sunt provident ipsa at quo. Omnis
+              architecto iusto at excepturi. Odit aperiam iste quibusdam nisi
+              at?
+            </p>
+          </div>
+          <div class="operation-content operation-content--2">
+            <ion-icon
+              name="cash-outline"
+              class="operation__icon operation__icon--2"
+            ></ion-icon>
+            <h3 class="operation__name">Easily get loans</h3>
+            <p class="operation__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+              dolor natus esse, similique nisi sunt provident ipsa at quo. Omnis
+              architecto iusto at excepturi. Odit aperiam iste quibusdam nisi
+              at?
+            </p>
+          </div>
+          <div class="operation-content operation-content--3">
+            <ion-icon
+              name="close-circle-outline"
+              class="operation__icon operation__icon--3"
+            ></ion-icon>
+            <h3 class="operation__name">Instantly close your account</h3>
+            <p class="operation__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+              dolor natus esse, similique nisi sunt provident ipsa at quo. Omnis
+              architecto iusto at excepturi. Odit aperiam iste quibusdam nisi
+              at?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slider">
+        <p class="section-name">our customers</p>
+        <h2 class="section__title">Let's hear it from our customers</h2>
+        <div class="slider-box">
+          <div class="slider-content">
+            <div class="slide">
+              <div class="header">
+                <img src="" alt="" class="slide__img" />
+                <h3 class="slide__title">Awesome Bank!</h3>
+              </div>
+              <blockquote class="slide__quote">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                dolorum culpa rem esse ea numquam, cum commodi expedita veniam
+                illo obcaecati exercitationem reiciendis ratione a amet sequi
+                officiis? Aut, ducimus.
+              </blockquote>
+              <address class="info">
+                <p class="customer-name">— Niusha KF</p>
+                <p class="customer-detail">Manager of KUTSUMICHO</p>
+              </address>
+            </div>
+            <div class="slide">
+              <div class="header">
+                <img src="" alt="" class="slide__img" />
+                <h3 class="slide__title">I gave them everything I had!</h3>
+              </div>
+              <blockquote class="slide__quote">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                dolorum culpa rem esse ea numquam, cum commodi expedita veniam
+                illo obcaecati exercitationem reiciendis ratione a amet sequi
+                officiis? Aut, ducimus.
+              </blockquote>
+              <address class="info">
+                <p class="customer-name">— Danto Sama</p>
+                <p class="customer-detail">Le artist of all time</p>
+              </address>
+            </div>
+            <div class="slide">
+              <div class="header">
+                <img src="" alt="" class="slide__img" />
+                <h3 class="slide__title">Why is this bank so good?</h3>
+              </div>
+              <blockquote class="slide__quote">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                dolorum culpa rem esse ea numquam, cum commodi expedita veniam
+                illo obcaecati exercitationem reiciendis ratione a amet sequi
+                officiis? Aut, ducimus.
+              </blockquote>
+              <address class="info">
+                <p class="customer-name">— Andrew Liam</p>
+                <p class="customer-detail">CEO of Golog</p>
+              </address>
+            </div>
+          </div>
+
+          <ion-icon name="arrow-back-outline"></ion-icon>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+          <div class="dots"></div>
+        </div>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+    <footer>
+      <section class="open-account"></section>
+      <div class="footer-menu">
+        <a href="#" class="footer-menu__link">About Us</a>
+        <a href="#" class="footer-menu__link">Contact US</a>
+        <a href="#" class="footer-menu__link">Opportunities</a>
+        <a href="#" class="footer-menu__link">Merchandise</a>
+      </div>
+      <p class="footer-title">mohibank</p>
+      <p class="copyright">© 2022 Mohibank, LTC. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
