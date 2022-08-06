@@ -12,7 +12,9 @@
   <body>
     <nav>
       <div class="nav__container">
-        <p class="title"><a href="#">MOHIBANK</a></p>
+        <a href="#">
+          <p class="title">mohibank</p>
+        </a>
         <button class="button menu--mobile--open">≡</button>
         <div class="menu--wide">
           <a href="#" class="link menu--wide__button">Rates</a>
@@ -34,12 +36,40 @@
         </div>
       </div>
     </nav>
-
-    <div class="menu--mobile">
-      <a href="#" class="link menu--mobile__button">Rates</a>
-      <a href="#" class="link menu--mobile__button">Terms</a>
-      <a href="#" class="link menu--mobile__button">Accounts</a>
-      <a href="#" class="link menu--mobile__button">App</a>
+    <div class="menu__overlay hidden"></div>
+    <div class="menu--mobile hidden">
+      <div class="menu--mobile__header">
+        <button class="menu--mobile__close">X</button>
+        <a href="">
+          <h2 class="menu--mobile__title">Mohibank</h2>
+        </a>
+      </div>
+      <a href="#" class="link menu--mobile__button menu--mobile__button--active"
+        ><ion-icon name="home-outline" class="menu--mobile__icon"></ion-icon
+        >Home</a
+      >
+      <a href="#" class="link menu--mobile__button"
+        ><ion-icon name="pulse-outline" class="menu--mobile__icon"></ion-icon
+        >Rates</a
+      >
+      <a href="#" class="link menu--mobile__button"
+        ><ion-icon
+          name="document-text-outline"
+          class="menu--mobile__icon"
+        ></ion-icon
+        >Terms</a
+      >
+      <a href="#" class="link menu--mobile__button"
+        ><ion-icon
+          name="bar-chart-outline"
+          class="menu--mobile__icon"
+        ></ion-icon
+        >Accounts</a
+      >
+      <a href="#" class="link menu--mobile__button"
+        ><ion-icon name="apps-outline" class="menu--mobile__icon"></ion-icon
+        >App</a
+      >
       <div class="menu--mobile__login">
         <a
           href="#"
@@ -57,85 +87,96 @@
     <main>
       <section class="head">
         <div class="head__content">
-          <h1 class="head__title">
-            Welcome to the best banking app in the world
-          </h1>
+          <h2 class="head__title">
+            Bank it to the <span class="head__span">core</span>
+          </h2>
           <p class="head__desc">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde,
-            quaerat laboriosam minima officia quidem voluptatem exercitationem
-            quod aspernatur ex dolorem quasi corporis dolore eveniet non tempore
-            numquam ipsa ab veritatis.
+            quaerat laboriosam minima officia quidem voluptatem.
           </p>
           <div class="head__links">
-            <button class="link head__link head__link--read-more">
-              Read More
-            </button>
-            <button class="link head__link head__link--start-now">
-              Open Your New Account →
-            </button>
+            <a class="link head__link head__link--read-more"> Read More </a>
+            <a class="link head__link head__link--start-now">
+              Open A New Account →
+            </a>
           </div>
         </div>
         <img src="img/hero.png" class="head__hero" />
       </section>
 
-      <secion class="features">
-        <p class="section-name">features</p>
-        <h2 class="section__title">
-          Everything from the best bank in the world!
-        </h2>
-        <div class="feature">
-          <img
-            src="img/grow-lazy.jpg"
-            data-src="img/grow.jpg"
-            alt=""
-            class="feature__img"
-          />
-          <div class="feature__content">
-            <ion-icon name="wallet-outline"></ion-icon>
-            <h2 class="feature__title">Your money, your choice</h2>
-            <p class="feature__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              consequatur repellat assumenda, id fuga atque.
-            </p>
+      <section class="features">
+        <div class="section-presentation">
+          <p class="section-name">features</p>
+          <h2 class="section__title">
+            Everything from the best bank in the world!
+          </h2>
+        </div>
+        <div class="feature-box">
+          <div class="feature">
+            <img
+              src="img/grow-lazy.jpg"
+              data-src="img/grow.jpg"
+              alt=""
+              class="feature__img lazy-img"
+            />
+            <div class="feature__content">
+              <ion-icon
+                name="wallet-outline"
+                class="feature__icon feature__icon--1"
+              ></ion-icon>
+              <h3 class="feature__title">Your money, your choice</h3>
+              <p class="feature__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                consequatur repellat assumenda, id fuga atque.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <img
+              src="img/digital-lazy.jpg"
+              data-src="img/digital.jpg"
+              alt=""
+              class="feature__img lazy-img"
+            />
+            <div class="feature__content">
+              <ion-icon
+                name="earth-outline"
+                class="feature__icon feature__icon--2"
+              ></ion-icon>
+              <h3 class="feature__title">Mr. Worldwide</h3>
+              <p class="feature__text">
+                Doloribus culpa inventore nam expedita deserunt, laboriosam at
+                neque error nesciunt voluptas autem nihil eaque.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <img
+              src="img/card-lazy.jpg"
+              data-src="img/card.jpg"
+              alt=""
+              class="feature__img lazy-img"
+            />
+            <div class="feature__content">
+              <ion-icon
+                name="card-outline"
+                class="feature__icon feature__icon--3"
+              ></ion-icon>
+              <h3 class="feature__title">As free as a debit card</h3>
+              <p class="feature__text">
+                Nostrum hic commodi! Aut laborum minus mollitia distinctio
+                possimus molestias dicta eum similique expedita
+              </p>
+            </div>
           </div>
         </div>
-        <div class="feature">
-          <img
-            src="img/digital-lazy.jpg"
-            data-src="img/digital.jpg"
-            alt=""
-            class="feature__img"
-          />
-          <div class="feature__content">
-            <ion-icon name="earth-outline"></ion-icon>
-            <h2 class="feature__title">Mr.Worldwide</h2>
-            <p class="feature__text">
-              Doloribus culpa inventore nam expedita deserunt, laboriosam at
-              neque error nesciunt voluptas autem nihil eaque.
-            </p>
-          </div>
-        </div>
-        <div class="feature">
-          <img
-            src="img/card-lazy.jpg"
-            data-src="img/card.jpg"
-            alt=""
-            class="feature__img"
-          />
-          <div class="feature__content">
-            <ion-icon name="card-outline"></ion-icon>
-            <h2 class="feature__title">as free as a debit card</h2>
-            <p class="feature__text">
-              Nostrum hic commodi! Aut laborum minus mollitia distinctio
-              possimus molestias dicta eum similique expedita
-            </p>
-          </div>
-        </div>
-      </secion>
+      </section>
 
       <section class="operations">
-        <p class="section-name">operations</p>
-        <h2 class="section__title">Do anything and do it FAST!</h2>
+        <div class="section-presentation">
+          <p class="section-name">operations</p>
+          <h2 class="section__title">Do anything and do it FAST!</h2>
+        </div>
         <div class="operation-box">
           <div class="operation-titles">
             <button
@@ -151,108 +192,120 @@
               Instant Close
             </button>
           </div>
-          <div
-            class="operation-content operation-content--1 operation-content--active"
-          >
-            <ion-icon
-              name="arrow-up-circle-outline"
-              class="operation__icon operation__icon--1"
-            ></ion-icon>
-            <h3 class="operation__name">Transfer to anyone</h3>
-            <p class="operation__desc">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
-              dolor natus esse, similique nisi sunt provident ipsa at quo. Omnis
-              architecto iusto at excepturi. Odit aperiam iste quibusdam nisi
-              at?
-            </p>
-          </div>
-          <div class="operation-content operation-content--2">
-            <ion-icon
-              name="cash-outline"
-              class="operation__icon operation__icon--2"
-            ></ion-icon>
-            <h3 class="operation__name">Easily get loans</h3>
-            <p class="operation__desc">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
-              dolor natus esse, similique nisi sunt provident ipsa at quo. Omnis
-              architecto iusto at excepturi. Odit aperiam iste quibusdam nisi
-              at?
-            </p>
-          </div>
-          <div class="operation-content operation-content--3">
-            <ion-icon
-              name="close-circle-outline"
-              class="operation__icon operation__icon--3"
-            ></ion-icon>
-            <h3 class="operation__name">Instantly close your account</h3>
-            <p class="operation__desc">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
-              dolor natus esse, similique nisi sunt provident ipsa at quo. Omnis
-              architecto iusto at excepturi. Odit aperiam iste quibusdam nisi
-              at?
-            </p>
+          <div class="operation-container">
+            <div
+              class="operation-content operation-content--1 operation-content--active"
+            >
+              <ion-icon
+                name="arrow-up-circle-outline"
+                class="operation__icon operation__icon--1"
+              ></ion-icon>
+              <div class="operation__text">
+                <h3 class="operation__name">Transfer to anyone</h3>
+                <p class="operation__desc">
+                  Nobis dolor natus esse, similique nisi sunt provident ipsa at
+                  quo. Omnis architecto iusto at excepturi. Odit aperiam iste
+                  quibusdam nisi at?
+                </p>
+              </div>
+            </div>
+            <div class="operation-content operation-content--2">
+              <ion-icon
+                name="cash-outline"
+                class="operation__icon operation__icon--2"
+              ></ion-icon>
+              <div class="operation__text">
+                <h3 class="operation__name">Easily get loans</h3>
+                <p class="operation__desc">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nobis dolor natus esse.
+                </p>
+              </div>
+            </div>
+            <div class="operation-content operation-content--3">
+              <ion-icon
+                name="close-circle-outline"
+                class="operation__icon operation__icon--3"
+              ></ion-icon>
+              <div class="operation__text">
+                <h3 class="operation__name">Instantly close your account</h3>
+                <p class="operation__desc">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nobis dolor natus esse, similique nisi sunt provident ipsa at
+                  quo. Omnis architecto iusto at excepturi.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="slider">
-        <p class="section-name">our customers</p>
-        <h2 class="section__title">Let's hear it from our customers</h2>
+        <div class="section-presentation">
+          <p class="section-name">our customers</p>
+          <h2 class="section__title">Let's hear it from our customers</h2>
+        </div>
         <div class="slider-box">
           <div class="slider-content">
             <div class="slide">
-              <div class="header">
-                <img src="" alt="" class="slide__img" />
-                <h3 class="slide__title">Awesome Bank!</h3>
-              </div>
+              <h3 class="slide__title">Awesome Bank!</h3>
               <blockquote class="slide__quote">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                dolorum culpa rem esse ea numquam, cum commodi expedita veniam
-                illo obcaecati exercitationem reiciendis ratione a amet sequi
-                officiis? Aut, ducimus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda suscipit enim placeat quo sint, corrupti debitis
+                dolorem?
               </blockquote>
               <address class="info">
-                <p class="customer-name">— Niusha KF</p>
-                <p class="customer-detail">Manager of KUTSUMICHO</p>
+                <img src="img/user-2.jpg" class="slide__img" />
+                <div class="info__container">
+                  <p class="customer-name">— Niusha KF</p>
+                  <p class="customer-detail">Manager of KUTSUMICHO</p>
+                </div>
               </address>
             </div>
             <div class="slide">
-              <div class="header">
-                <img src="" alt="" class="slide__img" />
-                <h3 class="slide__title">I gave them everything I had!</h3>
-              </div>
+              <h3 class="slide__title">I gave them everything I had!</h3>
               <blockquote class="slide__quote">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                dolorum culpa rem esse ea numquam, cum commodi expedita veniam
-                illo obcaecati exercitationem reiciendis ratione a amet sequi
-                officiis? Aut, ducimus.
+                Lorem ipsum dolor sit amet pariatur est minima sed nobis aperiam
+                veniam consectetur, adipisicing elit.
               </blockquote>
               <address class="info">
-                <p class="customer-name">— Danto Sama</p>
-                <p class="customer-detail">Le artist of all time</p>
+                <img src="img/user-3.jpg" class="slide__img" />
+                <div class="info__container">
+                  <p class="customer-name">— Danto Sama</p>
+                  <p class="customer-detail">Le artist of all time</p>
+                </div>
               </address>
             </div>
             <div class="slide">
-              <div class="header">
-                <img src="" alt="" class="slide__img" />
-                <h3 class="slide__title">Why is this bank so good?</h3>
-              </div>
+              <h3 class="slide__title">Why is this bank so good?</h3>
               <blockquote class="slide__quote">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                dolorum culpa rem esse ea numquam, cum commodi expedita veniam
-                illo obcaecati exercitationem reiciendis ratione a amet sequi
-                officiis? Aut, ducimus.
+                Doloribus, perspiciatis architecto minima quo quaerat atque
+                veniam. Facilis perferendis accusamus voluptate ut a ducimus.
               </blockquote>
               <address class="info">
-                <p class="customer-name">— Andrew Liam</p>
-                <p class="customer-detail">CEO of Golog</p>
+                <img src="img/user-1.jpg" class="slide__img" />
+                <div class="info__container">
+                  <p class="customer-name">— Andrew Liam</p>
+                  <p class="customer-detail">CEO of Golog</p>
+                </div>
               </address>
             </div>
           </div>
 
-          <ion-icon name="arrow-back-outline"></ion-icon>
-          <ion-icon name="arrow-forward-outline"></ion-icon>
           <div class="dots"></div>
+          <div class="mobile-arrows">
+            <button class="arrow--mobile arrow--mobile--left">
+              <ion-icon name="arrow-back-outline"></ion-icon></button
+            ><button class="arrow--mobile arrow--mobile--right">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+
+          <button class="arrow arrow--left">
+            <ion-icon name="arrow-back-outline"></ion-icon></button
+          ><button class="arrow arrow--right">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
         </div>
       </section>
     </main>
@@ -266,14 +319,23 @@
     ></script>
     <script src="script.js"></script>
     <footer>
-      <section class="open-account"></section>
+      <div class="open-account">
+        <p class="open-account__text">
+          Go ahead and open a new account in Mohibank for free
+        </p>
+        <a class="link head__link head__link--start-now">
+          Open A New Account →
+        </a>
+      </div>
       <div class="footer-menu">
-        <a href="#" class="footer-menu__link">About Us</a>
+        <a href="#" class="footer-menu__link">Commercials</a>
         <a href="#" class="footer-menu__link">Contact US</a>
         <a href="#" class="footer-menu__link">Opportunities</a>
         <a href="#" class="footer-menu__link">Merchandise</a>
+        <a href="#" class="footer-menu__link">Certificates</a>
+        <a href="#" class="footer-menu__link">About Us</a>
+        <a href="#" class="footer-menu__link">Support</a>
       </div>
-      <p class="footer-title">mohibank</p>
       <p class="copyright">© 2022 Mohibank, LTC. All rights reserved.</p>
     </footer>
   </body>
