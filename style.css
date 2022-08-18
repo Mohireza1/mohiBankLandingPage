@@ -16,7 +16,7 @@
   --cmp-clr: #B6D464;
   --sec-clr: #e8815b;
   --tri-clr: #64D482;
-  --bg-clr: rgb(245, 245, 245);
+  --bg-clr: rgb(248, 248, 248);
   --txt-clr: black;
   --bkdrp-clr: white;
   --main-font: 'Work Sans', sans-serif;
@@ -40,7 +40,7 @@ img {
 
 .lazy-img {
   filter: blur(20px);
-  max-width: 1500px;
+  transition: all 1s;
 }
 
 .hidden {
@@ -66,6 +66,11 @@ a {
 h2 {
   font-weight: 600;
   font-size: 2rem;
+}
+
+.jump-in {
+  opacity: 0;
+  transform: translateY(8%);
 }
 
 /* Classes */
@@ -96,11 +101,12 @@ nav {
   font-weight: 600;
 }
 
-.menu--mobile--open {
+.menu--mobile__open {
   background-color: transparent;
   border: none;
   outline: none;
   font-size: 3.2rem;
+  cursor: pointer;
 }
 
 .menu--wide,
@@ -117,6 +123,7 @@ nav {
   z-index: 999;
   inset: 0;
   backdrop-filter: blur(7px);
+  cursor: pointer;
 }
 
 .menu--mobile {
@@ -155,6 +162,7 @@ nav {
   outline: none;
   border: none;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .menu--mobile__button {
@@ -203,8 +211,8 @@ nav {
 
 /* Section */
 section {
-  margin-block-end: 10rem;
-  /* text-align: center; */
+  padding-block-start: 10rem;
+  transition: all 1.5s;
 }
 
 .section-name {
@@ -230,9 +238,11 @@ section {
   background-attachment: local;
   background-size: cover;
   background-position: center;
+  margin-block-start: -10rem;
 }
 
 .head__content {
+  margin-block-start: 2rem;
   display: flex;
   flex-direction: column;
   padding: 0 2rem;
@@ -301,7 +311,7 @@ section {
   opacity: 80%;
 }
 
-.headlink .head__hero {
+.head__hero {
   padding: 3rem;
   max-width: 800px;
   margin: auto;
@@ -380,8 +390,7 @@ section {
 }
 
 .operation-title:hover {
-  background-color: transparent;
-  background-color: var(--sec-clr);
+  transform: translateY(-20%);
 }
 
 .operation-title:active {
@@ -460,6 +469,7 @@ section {
   display: grid;
   place-items: center;
   position: relative;
+  overflow: hidden;
   width: 100%;
   min-height: 40vh;
 }
@@ -472,6 +482,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: all 0.5s;
 }
 
 .slide::before {
@@ -520,7 +531,16 @@ section {
 
 .dots {
   grid-area: dots;
-  margin-block-start: 2rem;
+  margin-block-start: -8rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.dots__dot {
+  background-color: var(--txt-clr);
+  border-radius: 50%;
+  padding: 0.15rem;
+  cursor: pointer;
 }
 
 .mobile-arrows {
@@ -596,23 +616,29 @@ footer {
 
 /* Desktop view */
 @media only screen and (min-width: 1000px) {
-  .menu--mobile--open {
+  .nav__container {
+    padding: 0 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .menu--mobile__open {
     display: none;
   }
 
   .menu--wide {
     display: flex;
-    gap: 2rem;
-    padding: 1.5rem;
-    font-size: 1.3rem;
+    /* gap: 2rem; */
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all 0.2s;
   }
 
-  .menu--wide__button:hover {
-    color: var(--pr-clr);
-  }
-
-  .menu--wide__button:active {
-    color: var(--txt-clr);
+  .menu--wide__button {
+    transition: all 0.12s;
+    padding: 2rem 1.2rem;
   }
 
   section {
@@ -627,12 +653,13 @@ footer {
   .head {
     flex-direction: row;
     align-items: center;
-    margin-block-start: -2rem;
+    margin-block-start: -3rem;
     padding: 2rem;
   }
 
   .head__content {
     gap: 7rem;
+    margin-inline-start: 4rem;
   }
 
   .head__desc {
@@ -642,6 +669,7 @@ footer {
   .head__hero {
     max-width: 750px;
     width: 50%;
+    padding: 0;
   }
 
   .feature {
@@ -651,6 +679,8 @@ footer {
     flex-direction: row;
     justify-content: space-around;
   }
+
+
 
   .feature__content {
     display: flex;
@@ -687,6 +717,7 @@ footer {
     font-size: 1.5rem;
     padding: 1rem 2rem;
     opacity: 90%;
+    transition: all 0.2s;
   }
 
   .operation-title--active {
@@ -695,14 +726,19 @@ footer {
   }
 
   .operation-container {
+    display: grid;
+    place-items: center;
     max-width: 55vw;
     background-color: var(--bkdrp-clr);
     padding: 5rem;
     border-radius: 5px;
+    transition: all 0.2s;
   }
 
   .operation-content {
     display: none;
+    min-height: 22vh;
+    transition: all 0.2s;
   }
 
   .operation-content--active {
@@ -725,6 +761,8 @@ footer {
     grid-template-areas: 'left-arrow slide right-arrow'
       '. dots .';
   }
+
+
 
   .info {
     margin-block-start: 3rem;
@@ -789,9 +827,13 @@ footer {
     font-size: 1.2rem;
   }
 
-
-
   .footer-menu__link:active {
     opacity: 85%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .lazy-img {
+    max-width: 40%;
   }
 }
