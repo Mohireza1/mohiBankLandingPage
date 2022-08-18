@@ -238,9 +238,3 @@ dots.addEventListener('click', e => {
 });
 
 ////////////////////////////////////////////
-
-window.addEventListener('beforeunload', e => {
-  e.preventDefault();
-  e.returnValue = '';
-  return;
-});
